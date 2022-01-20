@@ -15,6 +15,9 @@
       display: none;
     }
   }
+  .social_wrap {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -93,6 +96,21 @@
       left: 50%;
       bottom: 0;
       margin-left: -188px;
+    }
+  }
+
+  .benefits {
+    padding-bottom: 30px;
+  }
+  .reviews, .contacts {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .site-footer {
+    padding-top: 70px;
+    .links {
+      display: none;
     }
   }
 }

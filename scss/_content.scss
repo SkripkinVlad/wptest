@@ -3,6 +3,7 @@
 .start {
   background: url(../img/bg-start.jpg) 50% 50% no-repeat;
   background-size: cover;
+  min-height: 800px;
   height: 100vh;
   text-align: center;
   padding: 100px 0;
@@ -102,7 +103,7 @@
           }
           @media (max-width:767px) {
             transform: rotate(90deg);
-            left: 50%;
+            left: 70%;
           }
         }
       }
@@ -127,7 +128,7 @@
         }
         @media(max-width: 767px) {
           width: 106px;
-          left: 30px;
+          left: 0;
           top: -80px;
           transform: rotate(90deg);
         }
@@ -232,6 +233,7 @@
     position: absolute;
     bottom: 15px;
     left: 50%;
+    z-index: 1;
     transform: translateX(-50%);
     @media (min-width: 768px) {
       display: none;
@@ -296,4 +298,35 @@
 .page-content {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.social_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .social-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 25px;
+      a {
+        display: flex;
+        align-items: center;
+        transform: all .3s;
+        &:hover {
+          color: $secondaryColor;
+        }
+        img {
+          padding-right: 20px;
+        }
+      }
+    }
+  }
 }
