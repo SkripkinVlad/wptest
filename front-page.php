@@ -26,7 +26,7 @@
         <div class="service__list">
             <?php
                 $query = new WP_Query( array(
-                    'cat' => '2',
+                    'category_name' => 'what-we-do',
                     'order' => 'ASC'
                 ) );
                 if( $query->have_posts() ){
