@@ -121,6 +121,7 @@
             <div class="about-text">
                 <?php the_field( 'about_us_block' ); ?>
             </div>
+            <div class="circle-icon"></div>
         </div>
     </div>
 <?php endif; ?>
