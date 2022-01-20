@@ -18,10 +18,14 @@
 
 <div class="services">
     <div class="container">
-        <div class="services-intro">
-            <h2 class="section-title"><?php echo get_cat_name('2'); ?></h2>
-            <?php echo category_description('2'); ?>
-        </div>
+        <?php if( get_field('what_we_do_heading')): ?>
+            <div class="services-intro">
+                <h2 class="section-title">
+                    <?php the_field( 'what_we_do_heading' ); ?>
+                </h2>
+                <p><?php the_field( 'what_we_do_descr' ); ?></p>
+            </div>
+        <?php endif; ?>
 
         <div class="service__list">
             <?php

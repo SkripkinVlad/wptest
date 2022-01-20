@@ -52,7 +52,20 @@
 
 .services {
   padding-top: 140px;
-  padding-bottom: 140px;
+  padding-bottom: 200px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    background: url(../img/wave-1.png) no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 
   .services-intro {
     max-width: 530px;
@@ -187,10 +200,22 @@
 }
 
 .reviews {
-  padding-top: 150px;
+  padding-top: 180px;
   padding-bottom: 250px;
   background: url(../img/bg-reviews.jpg) 50% 50% no-repeat;
   background-size: cover;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 123px;
+    background: url(../img/wave-2.png) 100% 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
 }
 
 .carousel-reviews {

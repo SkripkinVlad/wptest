@@ -38,7 +38,10 @@
   .services {
     padding-top: 75px;
     padding-bottom: 75px;
-
+    &:before {
+      height: 120px;
+      background-position: 100% 0;
+    }
     .services-intro {
       margin-bottom: 55px;
 
