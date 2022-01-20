@@ -82,6 +82,8 @@
                     </nav>
                 </div>
             </div>
+
+            <?php dynamic_sidebar('copyright'); ?>
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

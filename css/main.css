@@ -365,6 +365,11 @@ select {
 .site-footer .site-navigation ul li a {
   font-size: 13px;
 }
+.site-footer .widget-copyr {
+  margin-top: 25px;
+  font-size: 10px;
+  color: #A2F81D;
+}
 
 .start {
   background: url(../img/bg-start.jpg) 50% 50% no-repeat;
@@ -778,6 +783,9 @@ select {
   }
   .site-footer .links {
     display: none;
+  }
+  .site-footer .widget-copyr {
+    text-align: center;
   }
 }
 

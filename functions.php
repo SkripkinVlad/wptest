@@ -107,26 +107,15 @@ add_action( 'after_setup_theme', 'start_tmpl_content_width', 0 );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function start_tmpl_widgets_init() {
-	register_sidebar(
-		array(
-			'name'          => esc_html__( 'Sidebar', 'start_tmpl' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
-		)
-	);
     register_sidebar(
         array(
-            'name'          => esc_html__( 'Social footer', 'start_tmpl' ),
-            'id'            => 'socials',
+            'name'          => esc_html__( 'Copyright', 'start_tmpl' ),
+            'id'            => 'copyright',
             'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
-            'before_widget' => '<section id="%1$s" class="widget widget-social %2$s">',
+            'before_widget' => '<section id="%1$s" class="widget widget-copyr %2$s">',
             'after_widget'  => '</section>',
-            'before_title'  => '<h2 class="widget-title">',
-            'after_title'   => '</h2>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
         )
     );
 }
