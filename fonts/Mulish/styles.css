@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Mulish-Black';
+  src: url(./Mulish-Black.eot);
+  src: url(./Mulish-Black.eot?#iefix) format('embedded-opentype'),
+       url(./Mulish-Black.otf) format('otf'),
+       url(./Mulish-Black.svg#Mulish-Black) format('svg'),
+       url(./Mulish-Black.woff) format('woff'),
+       url(./Mulish-Black.ttf) format('truetype'),
+       url(./Mulish-Black.woff2) format('woff2');
+}

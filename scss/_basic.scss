@@ -1,0 +1,133 @@
+// _basic.scss
+
+$bodyFont: 'SFProDisplay-Regular';
+$bodyFontThing: 'SFProDisplay-Thin';
+$bodyFontLight: 'SFProDisplay-Light';
+$bodyFontMedium: 'SFProDisplay-Medium';
+$menuFont: 'Mulish-Regular';
+$menuFontTitle: 'Mulish-Black';
+$headFont: 'MorebiRounded-Regular';
+$mainFontSie: 17px;
+$headFontSize: 47px;
+$mediumFontSize: 27px;
+$menuTitleFs: 28px;
+$footerFontSize: 13px;
+$mainBgColor: #323234;
+$mainFontColor: #fff;
+$secondaryColor: #A2F81D;
+$darkColor: #000;
+$bgContacts: #0F1218;
+$linkColor: #fff;
+$inputBg: #323234;
+$formText: #999;
+
+body {
+  font-family: 'SFProDisplay-Regular';
+  font-size: $mainFontSie;
+  color: $mainFontColor;
+  background: $mainBgColor;
+  line-height: 1.3;
+}
+
+h1,h2,h3 {
+  font-family: $headFont;
+  font-size: $headFontSize;
+}
+
+h1,h2 {
+  @media (max-width: 767px) {
+    font-size: $headFontSize - 5px;
+  }
+}
+
+h3 {
+  @media (max-width: 767px) {
+    font-size: $mediumFontSize - 1px;
+  }
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-family: $headFont;
+  font-size: $mediumFontSize;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $linkColor;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea,
+select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  background: $inputBg;
+  border: none;
+  border-radius: 11px;
+  color: $formText;
+  padding: 25px;
+  margin-bottom: 18px;
+  font-size: $mainFontSie;
+}
+.contact__form {
+  select {
+    height: 100px;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1145px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  margin-left: -15px;
+  margin-right: -15px;
+  .col-2 {
+    flex: 0 0 auto;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .col-3 {
+    @extend .col-2;
+    width: 33.3333%;
+  }
+  @media(max-width: 767px) {
+    flex-shrink: 0;
+    .col-2, .col-3 {
+      width: 100%;
+    }
+  }
+}

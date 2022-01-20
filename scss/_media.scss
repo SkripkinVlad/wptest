@@ -1,0 +1,98 @@
+// _media.scss
+
+@media (max-width: 1024px) {
+  .about {
+    background-position: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .about {
+    .mobile-logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .deskto-nav {
+    display: none;
+  }
+
+  .btn-left {
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .btn-right {
+      margin-left: auto;
+  }
+
+  .services {
+    padding-top: 75px;
+    padding-bottom: 75px;
+
+    .services-intro {
+      margin-bottom: 55px;
+
+      p {
+        font-size: $mediumFontSize - 1px;
+      }
+    }
+  }
+  .service__list {
+    .service-item {
+      .col {
+        width: 100%;
+        img {
+          display: block;
+          margin: 0 auto 30px auto;
+        }
+      }
+    }
+  }
+
+  .carousel-reviews {
+    .review-item {
+      .review-item-text {
+        font-size: $headFontSize - 5px;
+      }
+    }
+  }
+
+  .about {
+    background: #030B15;
+    padding-bottom: 335px;
+    padding-top: 80px;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      max-width: 376px;
+      height: 335px;
+      background: url(../img/about-mobile.jpg) 0 0 no-repeat;
+      background-size: cover;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin-left: -188px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      max-width: 376px;
+      height: 335px;
+      background: linear-gradient(#030B15 24.37%, rgba(3, 10, 20, 0.11) 100%);
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      margin-left: -188px;
+    }
+  }
+}

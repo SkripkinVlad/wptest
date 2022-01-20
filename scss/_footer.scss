@@ -1,0 +1,22 @@
+// _footer.scss
+
+.site-footer {
+  padding-top: 75px;
+  padding-bottom: 30px;
+  background: $darkColor;
+  .menu-title {
+    font-family: $menuFont;
+    font-size: $mainFontSie;
+    margin-bottom: 16px;
+  }
+  .site-navigation {
+    ul {
+      li {
+        margin-bottom: 8px;
+        a {
+          font-size: $footerFontSize;
+          }
+      }
+    }
+  }
+}

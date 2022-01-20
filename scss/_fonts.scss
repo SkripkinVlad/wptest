@@ -1,0 +1,77 @@
+// _fonts.scss
+
+@font-face {
+  font-family: 'MorebiRounded-Regular';
+  src: url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.eot");
+  src: url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.woff2") format("woff2"),
+  url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.woff") format("woff"),
+  url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.ttf") format("truetype"),
+  url("../fonts/MorebiRounded-Regular/MorebiRounded-Regular.svg#Morebi Rounded") format("svg");
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Thin';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.eot");
+  src: url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.otf") format('otf'),
+  url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.svg#FontsFree-Net-SFProDisplay-Thin") format('svg'),
+  url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.ttf") format('truetype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.woff") format('woff'),
+  url("../fonts/SFProDisplay/SFProDisplay-Thin/SFProDisplay-Thin.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Light';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.eot");
+  src: url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.otf") format('otf'),
+  url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.svg#SFProDisplay-Light") format('svg'),
+  url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.ttf") format('truetype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.woff") format('woff'),
+  url("../fonts/SFProDisplay/SFProDisplay-Light/SFProDisplay-Light.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Medium';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.eot");
+  src: url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.otf") format('otf'),
+  url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.svg#SFProDisplay-Medium") format('svg'),
+  url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.ttf") format('truetype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.woff") format('woff'),
+  url("../fonts/SFProDisplay/SFProDisplay-Medium/SFProDisplay-Medium.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Regular';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.eot");
+  src: url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.otf") format('otf'),
+  url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.svg#SFProDisplay-Regular") format('svg'),
+  url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.ttf") format('truetype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.woff") format('woff'),
+  url("../fonts/SFProDisplay/SFProDisplay-Regular/SFProDisplay-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Mulish-Regular';
+  src: url("../fonts/Mulish/Mulish-Regular.eot");
+  src: url("../fonts/Mulish/Mulish-Regular.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/Mulish/Mulish-Regular.otf") format('otf'),
+  url("../fonts/Mulish/Mulish-Regular.svg#Mulish-Regular") format('svg'),
+  url("../fonts/Mulish/Mulish-Regular.ttf") format('truetype'),
+  url("../fonts/Mulish/Mulish-Regular.woff") format('woff'),
+  url("../fonts/Mulish/Mulish-Regular.woff2") format('woff2');
+}
+
+@font-face {
+  font-family: 'Mulish-Black';
+  src: url("../fonts/Mulish/Mulish-Black.eot");
+  src: url("../fonts/Mulish/Mulish-Black.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/Mulish/Mulish-Black.otf") format('otf'),
+  url("../fonts/Mulish/Mulish-Black.svg#Mulish-Regular") format('svg'),
+  url("../fonts/Mulish/Mulish-Black.ttf") format('truetype'),
+  url("../fonts/Mulish/Mulish-Black.woff") format('woff'),
+  url("../fonts/Mulish/Mulish-Black.woff2") format('woff2');
+}

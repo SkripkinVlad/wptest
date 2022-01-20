@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'FontsFree-Net-SFProDisplay-Thin';
+  src: url(./FontsFree-Net-SFProDisplay-Thin.eot);
+  src: url(./FontsFree-Net-SFProDisplay-Thin.eot?#iefix) format('embedded-opentype'),
+       url(./FontsFree-Net-SFProDisplay-Thin.otf) format('otf'),
+       url(./FontsFree-Net-SFProDisplay-Thin.svg#FontsFree-Net-SFProDisplay-Thin) format('svg'),
+       url(./FontsFree-Net-SFProDisplay-Thin.ttf) format('truetype'),
+       url(./FontsFree-Net-SFProDisplay-Thin.woff) format('woff'),
+       url(./FontsFree-Net-SFProDisplay-Thin.woff2) format('woff2');
+}
