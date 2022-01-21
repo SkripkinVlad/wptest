@@ -50,6 +50,140 @@
   margin-right: auto;
 }
 
+.sectors {
+  background: $darkColor;
+}
+
+.sectors__inner {
+  padding: 235px 0;
+
+  .sector-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .list__sectors {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    &:before {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 1px;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 0;
+      top: 18px;
+      z-index: 1;
+      transform: translateX(-50%);
+    }
+    &:after {
+      content: "";
+      display: block;
+      width: 120px;
+      height: 1px;
+      border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+      position: absolute;
+      right: 0;
+      top: 18px;
+      z-index: 1;
+      transform: translateX(50%);
+    }
+
+    .list__sectors-item {
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 18px;
+        z-index: 1;
+        transform: translateX(-50%);
+      }
+    }
+    .list__sectors-item {
+      &:first-child:before {
+        display: none;
+      }
+    }
+
+    .sector-wind{
+      &:hover ~ .sector-bg-icon {
+        fill: #30E650;;
+        color: #30E650;;
+      }
+    }
+    .sector-solar {
+      &:hover ~ .sector-bg-icon {
+        fill: #FF670D;
+        color: #FF670D;
+      }
+    }
+    .sector-hydro {
+      &:hover ~ .sector-bg-icon {
+        fill: #0AD3FF;
+        color: #0AD3FF;
+      }
+    }
+    .sector-hydro {
+      &:hover ~ .sector-bg-icon {
+        fill: #0AD3FF;
+        color: #0AD3FF;
+      }
+    }
+    .sector-energy {
+      &:hover ~ .sector-bg-icon {
+        fill: #FF0D12;
+        color: #FF0D12;
+      }
+    }
+    .sector-digital {
+      &:hover ~ .sector-bg-icon {
+        fill: #6930E6;
+        color: #6930E6;
+      }
+    }
+
+    .sector-bg-icon {
+      fill: #202021;
+      width: 433px;
+      height: 464px;
+      display: block;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      transition: all .5s;
+    }
+
+    .list__sectors-item {
+      flex: 0 0 20%;
+      text-align: center;
+      svg {
+        width: 41px;
+        height: 44px;
+      }
+      h3 {
+        font-size: $mainFontSie;
+        font-font: $bodyFontMedium;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
 .services {
   padding-top: 140px;
   padding-bottom: 200px;

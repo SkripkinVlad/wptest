@@ -1,5 +1,16 @@
 // _media.scss
 
+@media (max-width: 1279px) {
+    .sectors__inner {
+      .list__sectors {
+        &:before, &:after  {
+          width: 70px;
+          transform: translateX(0);
+        }
+      }
+    }
+}
+
 @media (max-width: 1199px) {
   .reviews {
     &:before {
@@ -9,9 +20,28 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .about {
     background-position: 50% 50%;
+  }
+  .sectors__inner {
+    .list__sectors {
+      &:before, &:after  {
+       display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .sectors__inner {
+    .list__sectors {
+      .list__sectors-item {
+        &:before {
+          width: 50px;
+        }
+      }
+    }
   }
 }
 
@@ -42,6 +72,29 @@
 
   .btn-right {
       margin-left: auto;
+  }
+
+  .sectors__inner {
+    padding: 50px 0;
+    .sector-title {
+      margin-bottom: 0;
+    }
+
+    .list__sectors {
+      flex-direction: column;
+      .list__sectors-item {
+        flex: 0 0 100%;
+        padding: 40px 0;
+        &:before {
+          left: 50%;
+          width: 1px;
+          border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+          height: 50px;
+          top: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
 
   .services {
@@ -172,6 +225,17 @@
 }
 
 @media(max-width: 479px) {
+
+  .sectors__inner {
+    .list__sectors {
+      .sector-bg-icon {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+
   .services {
     &:before {
       height: 70px;

@@ -496,6 +496,120 @@ select {
   margin-right: auto;
 }
 
+.sectors {
+  background: #000;
+}
+
+.sectors__inner {
+  padding: 235px 0;
+}
+.sectors__inner .sector-title {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+.sectors__inner .list__sectors {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.sectors__inner .list__sectors:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  top: 18px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.sectors__inner .list__sectors:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 0;
+  top: 18px;
+  z-index: 1;
+  transform: translateX(50%);
+}
+.sectors__inner .list__sectors .list__sectors-item {
+  position: relative;
+  z-index: 1;
+}
+.sectors__inner .list__sectors .list__sectors-item:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 18px;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+.sectors__inner .list__sectors .list__sectors-item:first-child:before {
+  display: none;
+}
+.sectors__inner .list__sectors .sector-wind:hover ~ .sector-bg-icon {
+  fill: #30E650;
+  color: #30E650;
+}
+.sectors__inner .list__sectors .sector-solar:hover ~ .sector-bg-icon {
+  fill: #FF670D;
+  color: #FF670D;
+}
+.sectors__inner .list__sectors .sector-hydro:hover ~ .sector-bg-icon {
+  fill: #0AD3FF;
+  color: #0AD3FF;
+}
+.sectors__inner .list__sectors .sector-hydro:hover ~ .sector-bg-icon {
+  fill: #0AD3FF;
+  color: #0AD3FF;
+}
+.sectors__inner .list__sectors .sector-energy:hover ~ .sector-bg-icon {
+  fill: #FF0D12;
+  color: #FF0D12;
+}
+.sectors__inner .list__sectors .sector-digital:hover ~ .sector-bg-icon {
+  fill: #6930E6;
+  color: #6930E6;
+}
+.sectors__inner .list__sectors .sector-bg-icon {
+  fill: #202021;
+  width: 433px;
+  height: 464px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+.sectors__inner .list__sectors .list__sectors-item {
+  flex: 0 0 20%;
+  text-align: center;
+}
+.sectors__inner .list__sectors .list__sectors-item svg {
+  width: 41px;
+  height: 44px;
+}
+.sectors__inner .list__sectors .list__sectors-item h3 {
+  font-size: 17px;
+  font-font: "SFProDisplay-Medium";
+  margin-top: 15px;
+}
+
 .services {
   padding-top: 140px;
   padding-bottom: 200px;
@@ -803,15 +917,30 @@ select {
   padding-right: 20px;
 }
 
+@media (max-width: 1279px) {
+  .sectors__inner .list__sectors:before, .sectors__inner .list__sectors:after {
+    width: 70px;
+    transform: translateX(0);
+  }
+}
 @media (max-width: 1199px) {
   .reviews:before {
     height: 120px;
     background-position: 50% 0;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .about {
     background-position: 50% 50%;
+  }
+
+  .sectors__inner .list__sectors:before, .sectors__inner .list__sectors:after {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .sectors__inner .list__sectors .list__sectors-item:before {
+    width: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -839,6 +968,28 @@ select {
 
   .btn-right {
     margin-left: auto;
+  }
+
+  .sectors__inner {
+    padding: 50px 0;
+  }
+  .sectors__inner .sector-title {
+    margin-bottom: 0;
+  }
+  .sectors__inner .list__sectors {
+    flex-direction: column;
+  }
+  .sectors__inner .list__sectors .list__sectors-item {
+    flex: 0 0 100%;
+    padding: 40px 0;
+  }
+  .sectors__inner .list__sectors .list__sectors-item:before {
+    left: 50%;
+    width: 1px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+    height: 50px;
+    top: 0;
+    transform: translateY(-50%);
   }
 
   .services {
@@ -957,6 +1108,11 @@ select {
   }
 }
 @media (max-width: 479px) {
+  .sectors__inner .list__sectors .sector-bg-icon {
+    width: 100%;
+    height: 100%;
+  }
+
   .services:before {
     height: 70px;
     background-position: 100% 0;
