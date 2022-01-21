@@ -622,6 +622,11 @@ select {
   font-family: "SFProDisplay-Medium";
   margin-bottom: 10px;
 }
+.benefits .benefit-item h3 span {
+  font-size: 24px;
+  vertical-align: top;
+  padding-left: 4px;
+}
 .benefits .benefit-item p {
   font-size: 13px;
   text-transform: uppercase;
@@ -673,6 +678,9 @@ select {
 }
 .carousel-reviews .review-item .review-author {
   font-size: 27px;
+}
+.carousel-reviews .review-item .review-author span {
+  color: #63ED3B;
 }
 
 .about {

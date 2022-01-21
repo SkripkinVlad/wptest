@@ -75,7 +75,7 @@
                            <div class="benefit-icon">
                                <?php the_post_thumbnail(); ?>
                            </div>
-                           <h3><?php the_title(); ?></h3>
+                           <h3><?php the_title(); ?><span><?php the_field( 'text_near_title' ); ?></span></h3>
                            <p><?php the_content(); ?></p>
                        </div>
                    </div>
@@ -104,7 +104,8 @@
                         <?php the_content(); ?>
                     </div>
                     <div class="review-author">
-                        <?php the_title(); ?>
+                        <span><?php the_field( 'author_position' ); ?></span>
+                        <?php the_field( 'company_name' ); ?>
                     </div>
                 </div>
             <?php

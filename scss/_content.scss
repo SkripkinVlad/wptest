@@ -178,6 +178,11 @@
       font-size: 45px;
       font-family: $bodyFontMedium;
       margin-bottom: 10px;
+      span {
+        font-size: 24px;
+        vertical-align: top;
+        padding-left: 4px;
+      }
     }
     p {
       font-size: 13px;
@@ -233,6 +238,9 @@
 
     .review-author {
       font-size: $mediumFontSize;
+      span {
+        color: #63ED3B;
+      }
     }
   }
 }
