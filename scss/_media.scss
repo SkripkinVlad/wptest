@@ -130,6 +130,11 @@
 
   .contact-info {
     margin-top: 0;
+    .contact-inner {
+      .contact-inner-title {
+        display: none;
+      }
+    }
   }
 
   .file-field {
@@ -196,6 +201,16 @@
     .benefit-item {
       margin-top: 25px;
       margin-bottom: 25px;
+    }
+  }
+
+  .contacts {
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .contact-inner {
+      font-size: 14px;
     }
   }
 }

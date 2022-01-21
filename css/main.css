@@ -706,6 +706,10 @@ select {
   background: #0F1218;
   padding: 150px 0;
 }
+.contacts .contact__form {
+  max-width: 544px;
+  margin: 0 auto;
+}
 .contacts .contact__form textarea {
   height: 100px;
 }
@@ -735,6 +739,8 @@ select {
 }
 
 .btn-send {
+  max-width: 260px;
+  text-transform: capitalize;
   cursor: pointer;
   display: block;
   width: 100%;
@@ -905,6 +911,9 @@ select {
   .contact-info {
     margin-top: 0;
   }
+  .contact-info .contact-inner .contact-inner-title {
+    display: none;
+  }
 
   .file-field {
     display: table;
@@ -961,6 +970,14 @@ select {
   .benefits .benefit-item {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+
+  .contacts .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contacts .contact-inner {
+    font-size: 14px;
   }
 }
 

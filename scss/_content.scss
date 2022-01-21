@@ -267,6 +267,8 @@
   background: $bgContacts;
   padding: 150px 0;
   .contact__form {
+    max-width: 544px;
+    margin: 0 auto;
     textarea {
       height: 100px;
     }
@@ -303,6 +305,8 @@
 }
 
 .btn-send {
+  max-width: 260px;
+  text-transform: capitalize;
   cursor: pointer;
   display: block;
   width: 100%;
