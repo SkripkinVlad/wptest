@@ -93,39 +93,119 @@ select {
   margin-bottom: 18px;
   font-size: $mainFontSie;
 }
-.contact__form {
-  select {
-    height: 100px;
-  }
-}
 
-.container {
-  box-sizing: border-box;
-  max-width: 1145px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 100%;
-  .col-2 {
-    flex: 0 0 auto;
-    width: 50%;
-    padding-left: 15px;
-    padding-right: 15px;
+/*
+.custom-file-input {
+  &:before {
+    content: 'Attach CV';
+    display: inline-block;
+    background: url(../img/ico-file.svg) 0 0 no-repeat;
+    background-size: 24px;
+    border: none;
+    border-radius: 0;
+    padding: 3px 0 3px 35px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: $mainFontColor;
   }
-  .col-3 {
-    @extend .col-2;
-    width: 33.3333%;
+  &:hover:before {
+
   }
-  @media(max-width: 767px) {
-    flex-shrink: 0;
-    .col-2, .col-3 {
-      width: 100%;
+  &:active:before {
+
+  }
+}*/
+
+.file-field {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  input[type="file"]{
+    font-size: 0 !important;
+    position: relative;
+    padding: 0;
+    border: none;
+    background: none;
+    visibility: hidden;
+    pointer-events:none;
+    user-select:none
+  }
+  label {
+    display: inline-block;
+    background: url(../img/ico-file.svg) 0 0 no-repeat;
+    background-size: 24px;
+    border: none;
+    border-radius: 0;
+    padding: 3px 0 3px 35px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: $mainFontColor;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
     }
   }
 }
+
+/*
+.wpcf7-form-control.wpcf7-file.custom-file-input::-webkit-file-upload-button {
+  outline: none !important;
+  background: url(http://www.universaltechnolabs.com/test/utech/wp-content/uploads/2020/04/attach.png);
+  width: 25px;
+  height: 30px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  vertical-align: center;
+  font-size: 0px;
+  box-shadow: none !important;
+  border: 0px;
+  display: inline-block;
+  margin: auto 0 auto auto;
+}
+
+.wpcf7-form-control.wpcf7-file.custom-file-input::after{
+  content: 'Browse File';
+  display: inline-block;
+  font-size: 17px !important;
+  position:absolute;
+  left: 10%;
+  top: 25%;
+}
+*/
+
+
+  .container {
+    box-sizing: border-box;
+    max-width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
+    .col-2 {
+      flex: 0 0 auto;
+      width: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .col-3 {
+      @extend .col-2;
+      width: 33.3333%;
+    }
+    @media(max-width: 767px) {
+      flex-shrink: 0;
+      .col-2, .col-3 {
+        width: 100%;
+      }
+    }
+  }
+

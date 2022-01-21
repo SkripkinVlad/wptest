@@ -147,12 +147,9 @@
         }
       }
       h3 {
-        margin-bottom: 24px;
-        padding-bottom: 13px;
-
+        margin-bottom: 37px;
         a {
           color: $secondaryColor;
-
           &:hover {
             color: $mainFontColor;
           }
@@ -160,7 +157,6 @@
       }
 
       p {
-        max-width: 350px;
         font-size: 21px;
         font-family: $bodyFontLight;
       }
@@ -200,7 +196,7 @@
 }
 
 .reviews {
-  padding-top: 180px;
+  padding-top: 280px;
   padding-bottom: 250px;
   background: url(../img/bg-reviews.jpg) 50% 50% no-repeat;
   background-size: cover;
@@ -209,8 +205,9 @@
     content: "";
     display: block;
     width: 100%;
-    height: 123px;
-    background: url(../img/wave-2.png) 100% 0 no-repeat;
+    height: 180px;
+    background: url(../img/wave-2.png) no-repeat;
+    background-position: 100% 50%;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -269,9 +266,15 @@
 .contacts {
   background: $bgContacts;
   padding: 150px 0;
+  .contact__form {
+    textarea {
+      height: 100px;
+    }
+  }
 }
 
 .contact-info {
+  margin-top: 40px;
   .head {
     max-width: 450px;
     margin-bottom: 40px;

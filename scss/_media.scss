@@ -1,5 +1,14 @@
 // _media.scss
 
+@media (max-width: 1199px) {
+  .reviews {
+    &:before {
+      height: 120px;
+      background-position: 50% 0;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .about {
     background-position: 50% 50%;
@@ -62,6 +71,12 @@
     }
   }
 
+  .reviews {
+    &:before {
+      height: 70px;
+    }
+  }
+
   .carousel-reviews {
     .review-item {
       .review-item-text {
@@ -104,10 +119,40 @@
 
   .benefits {
     padding-bottom: 30px;
+    .benefit-icon {
+      min-height: 1px;
+    }
   }
   .reviews, .contacts {
     padding-top: 70px;
     padding-bottom: 70px;
+  }
+
+  .contact-info {
+    margin-top: 0;
+  }
+
+  .file-field {
+    display: table;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn-send {
+    display: block;
+    width: 200px;
+    text-transform: capitalize;
+    white-space: normal;
+    height: auto;
+    padding: 5px 35px;
+    background: linear-gradient(180deg, #A2F71D 0%, #43E849 100%);
+    box-shadow: 0px 8px 20px rgba(162, 170, 192, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+      background: linear-gradient(180deg, #43E849 0%, #A2F71D 100%);
+    }
   }
 
   .site-footer {
@@ -117,6 +162,40 @@
     }
     .widget-copyr {
       text-align: center;
+    }
+  }
+}
+
+@media(max-width: 479px) {
+  .services {
+    &:before {
+      height: 70px;
+      background-position: 100% 0;
+    }
+  }
+  .reviews {
+    &:before {
+      height: 44px;
+      background-position: 50% 0;
+    }
+  }
+
+  .service__list {
+    .service-item {
+      .service-item-text {
+        max-width: 100%;
+        h3 {
+          font-size: $mediumFontSize - 1px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .benefits {
+    .benefit-item {
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
   }
 }
