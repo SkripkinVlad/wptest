@@ -75,24 +75,69 @@
   }
 
   .sectors__inner {
-    padding: 50px 0;
+    padding: 35px 0;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 256px;
+      height: 275px;
+      background: url(../img/bg-sectors-mob.svg) no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      left: 50%;
+      top: 80px;
+      transform: translateX(-50%);
+    }
     .sector-title {
-      margin-bottom: 0;
+      position: relative;
+      padding-top: 155px;
+      &:before {
+        content: "";
+        display: block;
+        height: 133px;
+        width: 1px;
+        border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 0;
+        left: 50%;
+      }
     }
 
     .list__sectors {
       flex-direction: column;
+      padding-top: 70px;
+      padding-bottom: 70px;
       .list__sectors-item {
         flex: 0 0 100%;
-        padding: 40px 0;
+        padding: 70px 0;
         &:before {
           left: 50%;
           width: 1px;
           border-left: 0.5px solid rgba(255, 255, 255, 0.5);
-          height: 50px;
+          height: 100px;
           top: 0;
           transform: translateY(-50%);
         }
+      }
+      .sector-bg-icon {
+        display: none;
+      }
+      &:before {
+        display: block;
+        top: 50px;
+        left: 50%;
+        width: 130px;
+        transform: rotate(90deg);
+        margin-left: -65px;
+      }
+      &:after {
+        display: block;
+        left: 50%;
+        width: 130px;
+        transform: rotate(90deg) translateX(-50px);
+        margin-left: -65px;
+        top: 100%;
       }
     }
   }
@@ -225,17 +270,6 @@
 }
 
 @media(max-width: 479px) {
-
-  .sectors__inner {
-    .list__sectors {
-      .sector-bg-icon {
-        width: 100%;
-        height: 100%;
-      }
-    }
-  }
-
-
   .services {
     &:before {
       height: 70px;
