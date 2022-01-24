@@ -206,25 +206,20 @@
     </div>
 <?php endif; ?>
 
-<?php if (get_field('contact_head')): ?>
+
     <div class="contacts">
         <div class="container">
             <div class="row">
                 <div class="col-2">
                     <div class="contact-info">
                         <div class="head">
-                            <?php the_field( 'contact_head' ); ?>
+                            <?php dynamic_sidebar('contacts_head'); ?>
                         </div>
 
                         <div class="contact-inner">
-                            <h3 class="contact-inner-title">Contact details</h3>
-                            <div class="contact-email">
-                                <a href="mailto:<?php the_field( 'contact_email' ); ?>">
-                                    <?php the_field( 'contact_email' ); ?>
-                                </a>
-                            </div>
-                            <div class="country-contacts country-uk"><?php the_field( 'contact_uk' ); ?></div>
-                            <div class="country-contacts country-usa"><?php the_field( 'contact_usa' ); ?></div>
+                            <?php dynamic_sidebar('contacts_email'); ?>
+                            <?php dynamic_sidebar('contacts_uk'); ?>
+                            <?php dynamic_sidebar('contacts_usa'); ?>
                         </div>
                     </div>
                 </div>
@@ -236,6 +231,6 @@
             </div>
         </div>
     </div>
-<?php endif; ?>
+
 
 <?php get_footer();

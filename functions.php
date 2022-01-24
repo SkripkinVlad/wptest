@@ -109,13 +109,46 @@ add_action( 'after_setup_theme', 'start_tmpl_content_width', 0 );
 function start_tmpl_widgets_init() {
     register_sidebar(
         array(
+            'name'          => esc_html__( 'Contacts Heading and description', 'start_tmpl' ),
+            'id'            => 'contacts_head',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget country-contacts country-uk %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title">',
+            'after_title'   => '</h2>',
+        )
+    );
+    register_sidebar(
+        array(
             'name'          => esc_html__( 'Contacts UK', 'start_tmpl' ),
             'id'            => 'contacts_uk',
             'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
-            'before_widget' => '<section id="%1$s" class="widget widget-copyr %2$s">',
+            'before_widget' => '<section id="%1$s" class="widget country-contacts country-uk %2$s">',
             'after_widget'  => '</section>',
             'before_title'  => '<h4 class="widget-title">',
             'after_title'   => '</h4>',
+        )
+    );
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Contacts USA', 'start_tmpl' ),
+            'id'            => 'contacts_usa',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget country-contacts country-usa %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
+        )
+    );
+    register_sidebar(
+        array(
+            'name'          => esc_html__( 'Contacts Email', 'start_tmpl' ),
+            'id'            => 'contacts_email',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget contact-email %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h3 class="widget-title contact-inner-title">',
+            'after_title'   => '</h3>',
         )
     );
     register_sidebar(
