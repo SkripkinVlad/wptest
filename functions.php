@@ -109,6 +109,17 @@ add_action( 'after_setup_theme', 'start_tmpl_content_width', 0 );
 function start_tmpl_widgets_init() {
     register_sidebar(
         array(
+            'name'          => esc_html__( 'Contacts UK', 'start_tmpl' ),
+            'id'            => 'contacts_uk',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget widget-copyr %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
+        )
+    );
+    register_sidebar(
+        array(
             'name'          => esc_html__( 'Copyright', 'start_tmpl' ),
             'id'            => 'copyright',
             'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),

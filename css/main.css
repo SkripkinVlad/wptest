@@ -210,6 +210,21 @@ select {
 .row .col-5 {
   width: 20%;
 }
+@media (max-width: 991px) {
+  .row .col-5 {
+    width: 33.3333%;
+  }
+}
+@media (max-width: 767px) {
+  .row .col-5 {
+    width: 50%;
+  }
+}
+@media (max-width: 568px) {
+  .row .col-5 {
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .row {
     flex-shrink: 0;
@@ -886,17 +901,55 @@ select {
   margin-bottom: 25px;
 }
 
-.sector__body {
+.sector__services {
   padding-top: 175px;
   padding-bottom: 85px;
 }
+.sector__services .sector__intro-text {
+  max-width: 800px;
+  margin: 0 auto 100px auto;
+  text-align: center;
+}
+.sector__services p {
+  font-size: 27px;
+  font-family: "SFProDisplay-Thin";
+}
 
 .sector-service-item {
+  background: #FD7119;
   position: relative;
   box-shadow: 0px 8px 20px rgba(162, 170, 192, 0.2);
   border-radius: 22px;
   padding: 50px 12px;
   text-align: center;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: relative;
+  margin-top: 50px;
+}
+.sector-service-item .ico-round {
+  background: #FFF2EA;
+  box-shadow: 0px 8px 20px rgba(162, 170, 192, 0.3);
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+.sector-service-item h4 {
+  margin-top: 12px;
+  font-size: 21px;
+  font-family: "SFProDisplay-Medium";
+  min-height: 50px;
+}
+.sector-service-item p {
+  margin-top: 25px;
+  font-size: 16px;
 }
 
 @media (max-width: 1279px) {

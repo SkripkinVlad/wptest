@@ -151,6 +151,15 @@ select {
     }
     .col-5 {
       width: 20%;
+      @media(max-width: 991px) {
+        width: 33.3333%;
+      }
+      @media(max-width: 767px) {
+        width: 50%;
+      }
+      @media(max-width: 568px) {
+        width: 100%;
+      }
     }
     @media(max-width: 767px) {
       flex-shrink: 0;
