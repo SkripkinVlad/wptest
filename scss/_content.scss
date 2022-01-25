@@ -517,6 +517,42 @@
   }
 }
 
+.social-inline {
+  font-size: $footerFontSize;
+  font-family: $menuFont;
+  .social-list {
+    display: flex;
+    .social-title {
+      font-size: $footerFontSize;
+      margin-right: 20px;
+      margin-bottom: 0;
+    }
+    ul {
+      display: flex;
+      li {
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        &:last-child {
+          margin-right: 0;
+        }
+        img {
+          margin-right: 8px;
+          width: 12px;
+        }
+        a {
+          display: flex;
+          align-items: center;
+          transition: all 0.3s;
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+      }
+    }
+  }
+}
+
 .sector__intro {
   max-width: 780px;
   margin-left: auto;

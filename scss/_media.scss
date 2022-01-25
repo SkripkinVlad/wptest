@@ -268,6 +268,35 @@
       text-align: center;
     }
   }
+
+  .social-inline {
+    .social-list {
+      .social-title {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 21px;
+      }
+
+      flex-direction: column;
+      align-items: center;
+      ul {
+        flex-direction: column;
+        li {
+          margin-bottom: 15px;
+          img {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    .widget-copyr {
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
 }
 
 @media(max-width: 479px) {

@@ -89,11 +89,28 @@
             </div> <!-- links -->
             <?php endif; ?>
 
-            <div class="social_wrap social-homepage">
-                <?php dynamic_sidebar('social-widget'); ?>
-            </div>
+            <?php
+                if ( is_front_page() ) : ?>
+                    <div class="social_wrap social-homepage">
+                        <?php dynamic_sidebar('social-widget'); ?>
+                    </div>
+                    <?php dynamic_sidebar('copyright'); ?>
+                    <?php else : ?>
 
-            <?php dynamic_sidebar('copyright'); ?>
+                        <div class="footer__bottom">
+                          <div class="row">
+                              <div class="col-2">
+                                  <div class="social-inline"><?php dynamic_sidebar('social-widget'); ?></div>
+                              </div>
+                              <div class="col-2">
+                                  <?php dynamic_sidebar('copyright'); ?>
+                              </div>
+                          </div>
+                        </div>
+
+                <?php endif;
+            ?>
+
         </div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
