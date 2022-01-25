@@ -780,7 +780,7 @@ select {
   padding-top: 300px;
   padding-bottom: 270px;
   background: url(../img/bg-about.jpg) no-repeat;
-  background-position: 0 0;
+  background-position: right center;
   background-size: cover;
 }
 .about .about-text {
