@@ -26,6 +26,7 @@
 .btn-main {
   color: $mainFontColor;
   font-family: $bodyFontMedium;
+  text-transform: capitalize;
   max-width: 230px;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid $secondaryColor;
@@ -498,18 +499,14 @@
 
       li {
         margin-bottom: 25px;
-
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 20px;
+        }
         a {
-          display: flex;
-          align-items: center;
-          transform: all .3s;
-
           &:hover {
             color: $secondaryColor;
-          }
-
-          img {
-            margin-right: 20px;
           }
         }
       }
@@ -559,7 +556,7 @@
   margin-right: auto;
   .sector__intro-text {
     font-size: $mediumFontSize - 4px;
-    font-family: $bodyFontThing;
+    font-family: $bodyFontLight;
     line-height: 1.4;
     margin: 50px 0;
     h4 {
@@ -578,7 +575,7 @@
   }
   p {
     font-size: $mediumFontSize;
-    font-family: $bodyFontThing;
+    font-family: $bodyFontLight;
   }
 }
 
