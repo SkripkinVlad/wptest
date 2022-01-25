@@ -50,6 +50,8 @@ function start_tmpl_setup() {
 	register_nav_menus(
 		array(
 			'menu-main' => esc_html__( 'Primary', 'start_tmpl' ),
+            'menu-sectors' => esc_html__( 'Menu Sectors', 'start_tmpl' ),
+            'menu-contacts' => esc_html__( 'Menu Contacts', 'start_tmpl' ),
             'menu-mobile' => esc_html__( 'Mobile Navigation', 'start_tmpl' ),
 		)
 	);

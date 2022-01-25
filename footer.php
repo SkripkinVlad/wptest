@@ -38,20 +38,22 @@
 
 	<footer class="site-footer">
         <div class="container">
-            <div class="social_wrap social-homepage">
-                <?php dynamic_sidebar('social-widget'); ?>
-            </div>
+
+            <?php if ( is_front_page() ) : ?>
             <div class="links">
                 <div class="col">
                     <h4 class="menu-title">Our sectors</h4>
                     <nav class="site-navigation">
-                        <ul>
-                            <li><a href="#">Wind power</a></li>
-                            <li><a href="#">Solar power</a></li>
-                            <li><a href="#">Hydro power</a></li>
-                            <li><a href="#">Energy storage</a></li>
-                            <li><a href="#">Digital</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-sectors',
+                                'menu_id'        => 'menu-sectors',
+                                'container'      => false,
+                                'menu_class'     => 'main-menu'
+                            )
+                        );
+                        ?>
                     </nav>
                 </div>
                 <div class="col">
@@ -72,14 +74,23 @@
                 <div class="col">
                     <h4 class="menu-title">Contact us</h4>
                     <nav class="site-navigation">
-                        <ul>
-                            <li><a href="#">Send your CV</a></li>
-                            <li><a href="#">Chat to us</a></li>
-                            <li><a href="#">Submit a vacancy</a></li>
-                            <li><a href="#">Office locations</a></li>
-                        </ul>
+                        <?php
+                        wp_nav_menu(
+                            array(
+                                'theme_location' => 'menu-contacts',
+                                'menu_id'        => 'menu-contacts',
+                                'container'      => false,
+                                'menu_class'     => 'main-menu'
+                            )
+                        );
+                        ?>
                     </nav>
                 </div>
+            </div> <!-- links -->
+            <?php endif; ?>
+
+            <div class="social_wrap social-homepage">
+                <?php dynamic_sidebar('social-widget'); ?>
             </div>
 
             <?php dynamic_sidebar('copyright'); ?>
