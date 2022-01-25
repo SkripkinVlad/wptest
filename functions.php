@@ -153,6 +153,17 @@ function start_tmpl_widgets_init() {
     );
     register_sidebar(
         array(
+            'name'          => esc_html__( 'Social', 'start_tmpl' ),
+            'id'            => 'social-widget',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget social-list %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h2 class="widget-title social-title">',
+            'after_title'   => '</h2>',
+        )
+    );
+    register_sidebar(
+        array(
             'name'          => esc_html__( 'Copyright', 'start_tmpl' ),
             'id'            => 'copyright',
             'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),

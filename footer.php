@@ -13,34 +13,9 @@
 
 	<footer class="site-footer">
         <div class="container">
-            <div class="social_wrap">
-                <h2>Social:</h2>
-                <ul class="social-list">
-                    <li>
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-fb.png" alt="Facebook">
-                            <span>Facebook</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-in.png" alt="Linkedin">
-                            <span>Linkedin</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-twitt.png" alt="Twitter">
-                            <span>Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/ico-inst.png" alt="Instagram">
-                            <span>Instagram</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="social_wrap social-homepage">
+                <?php dynamic_sidebar('social-widget'); ?>
+
             </div>
             <div class="links">
                 <div class="col">
