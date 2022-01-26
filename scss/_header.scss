@@ -26,16 +26,28 @@
   }
 
   .btn-open-menu {
-    display: inline-block;
+    display: flex;
     width: auto;
     font-size: 16px;
     line-height: 1;
     color: $linkColor;
     cursor: pointer;
     text-transform: uppercase;
-    padding-left: 30px;
-    background: url(../img/ico-menu.svg) 0 50% no-repeat;
-    background-size: 20px;
+    .burger {
+      width: 21px;
+      margin-right: 10px;
+      span {
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #4DE845;
+        margin-bottom: 5px;
+        border-radius: 50%;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .header-content {
@@ -70,10 +82,15 @@
     }
 
     .header-content-logo {
+      display: block;
       position: absolute;
       left: 50%;
       top: 20px;
       width: 48px;
+      height: 51px;
+      background: url(../img/logo.svg);
+      background-position: 0 0;
+      background-repeat: no-repeat;
       transform: translateX(-50%);
     }
   }
@@ -172,6 +189,72 @@
   .current-menu-item {
     a {
       color: $secondaryColor;
+    }
+  }
+}
+
+.sector__page {
+  .site-header {
+    .logo {
+      width: 288px;
+      height: 51px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      transition: none;
+    }
+  }
+}
+
+.sector__solar {
+  .site-header {
+    .logo {
+      background: url(../img/logo-solar.svg);
+    }
+    .btn-open-menu {
+      .burger {
+        span {
+          background: #FF550D;
+        }
+      }
+    }
+    .header-content-logo {
+      background: url(../img/logo-solar-small.svg);
+    }
+  }
+}
+
+.sector__hydro {
+  .site-header {
+    .logo {
+      background: url(../img/logo-hydro.svg) 0 0 no-repeat;
+    }
+    .btn-open-menu {
+      .burger {
+        span {
+          background: #0AD3FF;
+        }
+      }
+    }
+    .header-content-logo {
+      background: url(../img/logo-hydro-small.svg);
+    }
+  }
+}
+
+.sector__wind {
+  .site-header {
+    .logo {
+      background: url(../img/logo-wind.svg) 0 0 no-repeat;
+    }
+    .btn-open-menu {
+      .burger {
+        span {
+          background: #43e849;
+        }
+      }
+    }
+    .header-content-logo {
+      background: url(../img/logo-wind-small.svg);
     }
   }
 }

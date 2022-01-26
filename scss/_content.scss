@@ -570,7 +570,7 @@
 }
 
 .sector-service-item {
-  background: #FD7119;
+  background: #30E650;
   position: relative;
   box-shadow: 0px 8px 20px rgba(162, 170, 192, 0.2);
   border-radius: 22px;
@@ -609,4 +609,31 @@
 .widget  {
   box-sizing: border-box;
   outline: none;
+}
+
+.sector__solar {
+  .btn-group {
+    .btn-main:hover {
+      border-color: #FF550D;
+      background: #FF550D;
+    }
+  }
+}
+
+.sector__hydro {
+  .btn-group {
+    .btn-main:hover {
+      border-color: #0ad3ff;
+      background: #0ad3ff;
+    }
+  }
+}
+
+.sector__wind {
+  .btn-group {
+    .btn-main:hover {
+      border-color: #43E849;
+      background: #43E849;
+    }
+  }
 }

@@ -309,16 +309,28 @@ textarea:focus {
   transition: all 0.3s;
 }
 .site-header .btn-open-menu {
-  display: inline-block;
+  display: flex;
   width: auto;
   font-size: 16px;
   line-height: 1;
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
-  padding-left: 30px;
-  background: url(../img/ico-menu.svg) 0 50% no-repeat;
-  background-size: 20px;
+}
+.site-header .btn-open-menu .burger {
+  width: 21px;
+  margin-right: 10px;
+}
+.site-header .btn-open-menu .burger span {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #4DE845;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+.site-header .btn-open-menu .burger:last-child {
+  margin-bottom: 0;
 }
 .site-header .header-content {
   width: 100%;
@@ -351,10 +363,15 @@ textarea:focus {
   font-family: "SFProDisplay-Medium";
 }
 .site-header .header-content .header-content-logo {
+  display: block;
   position: absolute;
   left: 50%;
   top: 20px;
   width: 48px;
+  height: 51px;
+  background: url(../img/logo.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
   transform: translateX(-50%);
 }
 .site-header.open {
@@ -444,6 +461,44 @@ textarea:focus {
 }
 .mobile-menu .current-menu-item a {
   color: #A2F81D;
+}
+
+.sector__page .site-header .logo {
+  width: 288px;
+  height: 51px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: none;
+}
+
+.sector__solar .site-header .logo {
+  background: url(../img/logo-solar.svg);
+}
+.sector__solar .site-header .btn-open-menu .burger span {
+  background: #FF550D;
+}
+.sector__solar .site-header .header-content-logo {
+  background: url(../img/logo-solar-small.svg);
+}
+
+.sector__hydro .site-header .logo {
+  background: url(../img/logo-hydro.svg) 0 0 no-repeat;
+}
+.sector__hydro .site-header .btn-open-menu .burger span {
+  background: #0AD3FF;
+}
+.sector__hydro .site-header .header-content-logo {
+  background: url(../img/logo-hydro-small.svg);
+}
+
+.sector__wind .site-header .logo {
+  background: url(../img/logo-wind.svg) 0 0 no-repeat;
+}
+.sector__wind .site-header .btn-open-menu .burger span {
+  background: #43e849;
+}
+.sector__wind .site-header .header-content-logo {
+  background: url(../img/logo-wind-small.svg);
 }
 
 .site-footer {
@@ -1004,7 +1059,7 @@ textarea:focus {
 }
 
 .sector-service-item {
-  background: #FD7119;
+  background: #30E650;
   position: relative;
   box-shadow: 0px 8px 20px rgba(162, 170, 192, 0.2);
   border-radius: 22px;
@@ -1043,6 +1098,21 @@ textarea:focus {
 .widget {
   box-sizing: border-box;
   outline: none;
+}
+
+.sector__solar .btn-group .btn-main:hover {
+  border-color: #FF550D;
+  background: #FF550D;
+}
+
+.sector__hydro .btn-group .btn-main:hover {
+  border-color: #0ad3ff;
+  background: #0ad3ff;
+}
+
+.sector__wind .btn-group .btn-main:hover {
+  border-color: #43E849;
+  background: #43E849;
 }
 
 @media (max-width: 1279px) {

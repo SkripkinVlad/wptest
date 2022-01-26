@@ -29,11 +29,12 @@
         <div class="container">
             <a href="/" class="logo"></a>
 
-            <a class="btn-open-menu">menu</a>
+            <a class="btn-open-menu">
+                <div class="burger"><span></span><span></span><span></span></div>
+                <span>menu</span>
+            </a>
             <div class="header-content">
-                <a href="/" class="header-content-logo">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="logo">
-                </a>
+                <a href="/" class="header-content-logo"></a>
                 <a class="btn-close-menu">menu</a>
 
                 <nav class="mobile-nav">

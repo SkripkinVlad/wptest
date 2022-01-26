@@ -13,24 +13,26 @@
             </div>
         </div>
 
-
-        <div class="row btn-group">
-            <div class="col-2">
-                <a href="<?php the_field( 'sector_btn_link_1' ); ?>" class="btn-main btn-left" style="border-color:<?php the_field( 'primary_sector_colour' ); ?>">
-                    <?php the_field( 'sector_button_1' ); ?>
-                </a>
+        <?php if( get_field('sector_button_1')): ?>
+            <div class="row btn-group">
+                <div class="col-2">
+                    <a href="<?php the_field( 'sector_btn_link_1' ); ?>" class="btn-main btn-left" style="border-color:<?php the_field( 'primary_sector_colour' ); ?>">
+                        <?php the_field( 'sector_button_1' ); ?>
+                    </a>
+                </div>
+                <div class="col-2">
+                    <a href="<?php the_field( 'sector_btn_link_2' ); ?>" class="btn-main btn-right" style="border-color:<?php the_field( 'primary_sector_colour' ); ?>">
+                        <?php the_field( 'sector_button_2' ); ?>
+                    </a>
+                </div>
             </div>
-            <div class="col-2">
-                <a href="<?php the_field( 'sector_btn_link_2' ); ?>" class="btn-main btn-right" style="border-color:<?php the_field( 'primary_sector_colour' ); ?>">
-                    <?php the_field( 'sector_button_2' ); ?>
-                </a>
-            </div>
-        </div>
+        <?php endif; ?>
 
     </div>
 </div>
 
-<div class="sector__services" style="background: #000 url(<?php the_field( 'sector_body_bg' ); ?>) 0 0 no-repeat; background-size: cover;">
+<?php if( get_field('main_text_sector')): ?>
+<div class="sector__services" style="background: #43D14A url(<?php the_field( 'sector_body_bg' ); ?>) 0 0 no-repeat; background-size: cover;">
     <div class="container">
         <div class="sector__intro-text">
             <?php the_field( 'main_text_sector' ); ?>
@@ -110,3 +112,4 @@
         </div>
     </div>
 </div>
+<?php endif; ?>
