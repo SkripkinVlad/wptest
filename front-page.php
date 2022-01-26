@@ -16,31 +16,6 @@
     </div>
 </div>
 
-<?php if ( have_rows( 'sectors_links' ) ) : ?>
-    <?php while ( have_rows( 'sectors_links' ) ) : the_row(); ?>
-        <?php $sector_link_1 = get_sub_field( 'sector_link_1' ); ?>
-        <?php if ( $sector_link_1 ) : ?>
-            <a href="<?php echo esc_url( $sector_link_1); ?>"><?php echo esc_html( $sector_link_1 ); ?></a>
-        <?php endif; ?>
-        <?php $sector_link_2 = get_sub_field( 'sector_link_2' ); ?>
-        <?php if ( $sector_link_2 ) : ?>
-            <a href="<?php echo esc_url( $sector_link_2); ?>"><?php echo esc_html( $sector_link_2 ); ?></a>
-        <?php endif; ?>
-        <?php $sector_link_3 = get_sub_field( 'sector_link_3' ); ?>
-        <?php if ( $sector_link_3 ) : ?>
-            <a href="<?php echo esc_url( $sector_link_3); ?>"><?php echo esc_html( $sector_link_3 ); ?></a>
-        <?php endif; ?>
-        <?php $sector_link_4 = get_sub_field( 'sector_link_4' ); ?>
-        <?php if ( $sector_link_4 ) : ?>
-            <a href="<?php echo esc_url( $sector_link_4); ?>"><?php echo esc_html( $sector_link_4 ); ?></a>
-        <?php endif; ?>
-        <?php $sector_link_5 = get_sub_field( 'sector_link_5' ); ?>
-        <?php if ( $sector_link_5 ) : ?>
-            <a href="<?php echo esc_url( $sector_link_5); ?>"><?php echo esc_html( $sector_link_5 ); ?></a>
-        <?php endif; ?>
-    <?php endwhile; ?>
-<?php endif; ?>
-
 <div class="sectors">
     <div class="container">
         <div class="sectors__inner">
@@ -51,12 +26,12 @@
                             <svg fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5.86636 5.59783C5.05986 6.31608 4.29581 7.11883 3.61666 7.92158C4.25337 7.11883 5.01741 6.31608 5.86636 5.59783ZM33.1174 12.6958C30.0188 11.1748 26.7503 10.4566 23.1423 10.7101C19.3221 10.9636 16.4781 12.9916 16.563 15.4843C16.7753 21.1459 24.2884 17.5968 28.4907 22.9204C33.1174 28.3706 28.4058 38.8909 14.0586 37.2431C8.83765 36.6516 4.29581 34.5391 1.02739 31.1169C0.900044 30.9901 0.687808 31.1169 0.772703 31.2859C4.21092 39.7359 18.8976 48.7351 32.226 40.2006C44.663 32.2154 42.8802 17.8503 33.1174 12.6958ZM7.86137 30.9479C10.96 32.4689 14.2284 33.1871 17.8364 32.9336C21.6567 32.6801 24.5006 30.6521 24.4157 28.1594C24.2035 22.4979 16.6904 26.0469 12.4881 20.7234C7.90382 15.2731 12.6154 4.75283 26.9626 6.40058C32.1836 6.99208 36.7254 9.10459 39.9938 12.5268C40.1212 12.6536 40.3334 12.5268 40.2485 12.3578C36.8103 3.90783 22.1236 -5.09144 8.79521 3.44308C-3.68424 11.3861 -1.85902 25.7511 7.86137 30.9479Z" fill="#30E650"/>
                             </svg>
-                            <h3>
+                            <h4>
                                 <?php $link_wind = get_field( 'link_wind' ); ?>
                                 <?php if ( $link_wind ) : ?>
                                     <a href="<?php echo esc_url( $link_wind); ?>">Wind power</a>
                                 <?php endif; ?>
-                            </h3>
+                            </h4>
                         </div>
                         <div class="list__sectors-item sector-solar">
                             <svg fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -68,12 +43,12 @@
                                     </radialGradient>
                                 </defs>
                             </svg>
-                            <h3>
+                            <h4>
                                 <?php $link_solar = get_field( 'link_solar' ); ?>
                                 <?php if ( $link_solar ) : ?>
                                     <a href="<?php echo esc_url( $link_solar); ?>">Solar Power</a>
                                 <?php endif; ?>
-                            </h3>
+                            </h4>
                         </div>
 
                         <div class="list__sectors-item sector-hydro">
@@ -86,12 +61,12 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3>
+                            <h4>
                                 <?php $link_hydro = get_field( 'link_hydro' ); ?>
                                 <?php if ( $link_hydro ) : ?>
                                     <a href="<?php echo esc_url( $link_hydro); ?>">Hydro Power</a>
                                 <?php endif; ?>
-                            </h3>
+                            </h4>
                         </div>
 
                         <div class="list__sectors-item sector-energy">
@@ -104,12 +79,12 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3>
+                            <h4>
                                 <?php $link_energy = get_field( 'link_energy' ); ?>
                                 <?php if ( $link_energy ) : ?>
                                     <a href="<?php echo esc_url( $link_energy); ?>">Energy Storage</a>
                                 <?php endif; ?>
-                            </h3>
+                            </h4>
                         </div>
 
                         <div class="list__sectors-item sector-digital">
@@ -122,12 +97,12 @@
                                     </linearGradient>
                                 </defs>
                             </svg>
-                            <h3>
+                            <h4>
                                 <?php $link_digital = get_field( 'link_digital' ); ?>
                                 <?php if ( $link_digital ) : ?>
                                     <a href="<?php echo esc_url( $link_digital); ?>">Digital</a>
                                 <?php endif; ?>
-                            </h3>
+                            </h4>
                         </div>
 
                         <!-- bg svg big-->

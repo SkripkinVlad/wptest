@@ -55,6 +55,18 @@
 }
 
 @font-face {
+  font-family: 'SFProDisplay-Semibold';
+  src: url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.eot");
+  src: url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.eot?#iefix") format('embedded-opentype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.otf") format('otf'),
+  url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.svg#SFProDisplay-Semibold") format('svg'),
+  url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.ttf") format('truetype'),
+  url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.woff") format('woff'),
+  url("../fonts/SFProDisplay/SFProDisplay-Semibold/SFProDisplay-Semibold.woff2") format('woff2');
+}
+
+
+@font-face {
   font-family: 'Mulish-Regular';
   src: url("../fonts/Mulish/Mulish-Regular.eot");
   src: url("../fonts/Mulish/Mulish-Regular.eot?#iefix") format('embedded-opentype'),

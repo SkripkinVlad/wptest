@@ -25,11 +25,12 @@
 
 .btn-main {
   color: $mainFontColor;
-  font-family: $bodyFontMedium;
+  font-family: $btnFont;
   text-transform: capitalize;
   max-width: 230px;
   background: rgba(0, 0, 0, 0.3);
   border: 1px solid $secondaryColor;
+  letter-spacing: 0.1em;
   border-radius: 32px;
   height: 63px;
   display: flex;
@@ -176,9 +177,9 @@
         width: 41px;
         height: 44px;
       }
-      h3 {
+      h4 {
         font-size: $mainFontSie;
-        font-font: $bodyFontMedium;
+        font-family: $btnFont;
         margin-top: 15px;
       }
     }
@@ -603,4 +604,9 @@
     margin-top: 25px;
     font-size: $mainFontSie - 1px;
   }
+}
+
+.widget  {
+  box-sizing: border-box;
+  outline: none;
 }
