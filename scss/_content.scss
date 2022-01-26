@@ -189,13 +189,7 @@
   padding-top: 140px;
   padding-bottom: 200px;
   position: relative;
-  &:before {
-    content: "";
-    display: block;
-    background: url(../img/wave-1.png) no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    height: 250px;
+  .img-wave-btm {
     width: 100%;
     position: absolute;
     left: 0;
@@ -341,14 +335,9 @@
   background: url(../img/bg-reviews.jpg) 50% 50% no-repeat;
   background-size: cover;
   position: relative;
-  &:before {
-    content: "";
+  .img-wave-top {
     display: block;
     width: 100%;
-    height: 180px;
-    background: url(../img/wave-2.png) no-repeat;
-    background-position: 100% 50%;
-    background-size: cover;
     position: absolute;
     left: 0;
     top: 0;

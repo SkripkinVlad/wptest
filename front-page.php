@@ -181,6 +181,7 @@
             ?>
         </div>
     </div>
+    <img class="img-wave-btm" src="<?php echo get_template_directory_uri(); ?>/img/wave-1.png" alt="">
 </div>
 
 <div class="benefits">
@@ -213,6 +214,7 @@
 </div>
 
 <div class="reviews">
+    <img class="img-wave-top" src="<?php echo get_template_directory_uri(); ?>/img/wave-2.png" alt="">
     <div class="container">
         <div class="carousel-reviews">
             <?php
