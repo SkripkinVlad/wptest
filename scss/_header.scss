@@ -196,11 +196,14 @@
 .sector__page {
   .site-header {
     .logo {
-      width: 288px;
-      height: 51px;
+      width: 100%;
+      max-width: 288px;
+      height: 52px;
       background-repeat: no-repeat;
-      background-position: 0 0;
+      background-position: 0 50%;
       transition: none;
+      background-size: 100%;
+      margin-right: 30px;
     }
   }
 }
@@ -208,7 +211,7 @@
 .sector__solar {
   .site-header {
     .logo {
-      background: url(../img/logo-solar.svg);
+      background-image: url(../img/logo-solar.png);
     }
     .btn-open-menu {
       .burger {
@@ -226,7 +229,7 @@
 .sector__hydro {
   .site-header {
     .logo {
-      background: url(../img/logo-hydro.svg) 0 0 no-repeat;
+      background-image: url(../img/logo-hydro.png);
     }
     .btn-open-menu {
       .burger {
@@ -244,7 +247,7 @@
 .sector__wind {
   .site-header {
     .logo {
-      background: url(../img/logo-wind.svg) 0 0 no-repeat;
+      background-image: url(../img/logo-wind.png);
     }
     .btn-open-menu {
       .burger {

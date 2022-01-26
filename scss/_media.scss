@@ -297,6 +297,19 @@
       text-align: center;
     }
   }
+
+  .sector__page {
+    .start {
+      h1 {
+        margin-bottom: 25px;
+      }
+      .sector__intro {
+        .sector__intro-text {
+          margin: 25px 0;
+        }
+      }
+    }
+  }
 }
 
 @media(max-width: 479px) {

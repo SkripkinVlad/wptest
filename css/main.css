@@ -464,15 +464,18 @@ textarea:focus {
 }
 
 .sector__page .site-header .logo {
-  width: 288px;
-  height: 51px;
+  width: 100%;
+  max-width: 288px;
+  height: 52px;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: 0 50%;
   transition: none;
+  background-size: 100%;
+  margin-right: 30px;
 }
 
 .sector__solar .site-header .logo {
-  background: url(../img/logo-solar.svg);
+  background-image: url(../img/logo-solar.png);
 }
 .sector__solar .site-header .btn-open-menu .burger span {
   background: #FF550D;
@@ -482,7 +485,7 @@ textarea:focus {
 }
 
 .sector__hydro .site-header .logo {
-  background: url(../img/logo-hydro.svg) 0 0 no-repeat;
+  background-image: url(../img/logo-hydro.png);
 }
 .sector__hydro .site-header .btn-open-menu .burger span {
   background: #0AD3FF;
@@ -492,7 +495,7 @@ textarea:focus {
 }
 
 .sector__wind .site-header .logo {
-  background: url(../img/logo-wind.svg) 0 0 no-repeat;
+  background-image: url(../img/logo-wind.png);
 }
 .sector__wind .site-header .btn-open-menu .burger span {
   background: #43e849;
@@ -1100,6 +1103,10 @@ textarea:focus {
   outline: none;
 }
 
+.sector__page .start {
+  min-height: 900px;
+}
+
 .sector__solar .btn-group .btn-main:hover {
   border-color: #FF550D;
   background: #FF550D;
@@ -1372,6 +1379,13 @@ textarea:focus {
   .footer__bottom .widget-copyr {
     margin-top: 20px;
     text-align: center;
+  }
+
+  .sector__page .start h1 {
+    margin-bottom: 25px;
+  }
+  .sector__page .start .sector__intro .sector__intro-text {
+    margin: 25px 0;
   }
 }
 @media (max-width: 479px) {

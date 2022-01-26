@@ -611,6 +611,12 @@
   outline: none;
 }
 
+.sector__page {
+  .start {
+    min-height: 900px;
+  }
+}
+
 .sector__solar {
   .btn-group {
     .btn-main:hover {
