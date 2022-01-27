@@ -6,10 +6,10 @@
         <?php if (get_field('homepage_btn_1')): ?>
             <div class="row btn-group">
                 <div class="col-2">
-                    <a href="<?php the_field( 'homepage_btn_link_1' ); ?>" class="btn-main btn-left"><?php the_field( 'homepage_btn_1' ); ?></a>
+                    <a href="<?php the_field( 'homepage_btn_link_1' ); ?>" class="btn-main btn-pull-left"><?php the_field( 'homepage_btn_1' ); ?></a>
                 </div>
                <div class="col-2">
-                   <a href="<?php the_field( 'homepage_btn_link_2' ); ?>" class="btn-main btn-right"><?php the_field( 'homepage_btn_2' ); ?></a>
+                   <a href="<?php the_field( 'homepage_btn_link_2' ); ?>" class="btn-main btn-btn-right"><?php the_field( 'homepage_btn_2' ); ?></a>
                </div>
             </div>
         <?php endif; ?>
