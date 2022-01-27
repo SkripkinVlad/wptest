@@ -14,5 +14,8 @@
 
     </main><!-- #main -->
 
+    <?php get_template_part( 'inc/footer-sectors' ); ?>
+
     <?php get_footer(); ?>
+
 </div>

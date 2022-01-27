@@ -509,6 +509,11 @@ textarea:focus {
   padding-bottom: 30px;
   background: #000;
 }
+.site-footer .links-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .site-footer .menu-title {
   font-family: "Mulish-Regular";
   font-size: 17px;
@@ -520,7 +525,8 @@ textarea:focus {
 .site-footer .site-navigation ul li a {
   font-size: 13px;
 }
-.site-footer .widget-copyr {
+
+.widget-copyr {
   margin-top: 25px;
   font-size: 10px;
   color: #A2F81D;
@@ -531,8 +537,9 @@ textarea:focus {
   text-align: right;
 }
 
-.sector__page .site-footer {
-  padding-top: 30px;
+.footer__sector {
+  background: #000;
+  padding: 30px 0;
 }
 
 .start {
@@ -915,7 +922,9 @@ textarea:focus {
 }
 
 .contact-info {
-  margin-top: 40px;
+  padding-top: 45px;
+  background: url(../img/logo-scroll.svg) 0 0 no-repeat;
+  background-size: 150px;
 }
 .contact-info .head {
   max-width: 450px;
@@ -1106,6 +1115,9 @@ textarea:focus {
 .sector__page .start {
   min-height: 900px;
 }
+.sector__page .site-footer {
+  display: none;
+}
 
 .sector__solar .btn-group .btn-main:hover {
   border-color: #FF550D;
@@ -1120,6 +1132,19 @@ textarea:focus {
 .sector__wind .btn-group .btn-main:hover {
   border-color: #43E849;
   background: #43E849;
+}
+
+.contacts-top h1, .contacts-top h2 {
+  margin-bottom: 26px;
+  line-height: 1.15;
+}
+.contacts-top p {
+  font-family: "SFProDisplay-Semibold";
+}
+
+.page__contacts .site-footer .container {
+  background: url(../img/logo-scroll.svg) 15px 0 no-repeat;
+  background-size: 150px;
 }
 
 @media (max-width: 1279px) {

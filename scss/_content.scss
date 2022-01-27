@@ -409,7 +409,9 @@
 }
 
 .contact-info {
-  margin-top: 40px;
+  padding-top: 45px;
+  background: url(../img/logo-scroll.svg) 0 0 no-repeat;
+  background-size: 150px;
   .head {
     max-width: 450px;
     margin-bottom: 40px;
@@ -615,6 +617,9 @@
   .start {
     min-height: 900px;
   }
+  .site-footer {
+    display: none;
+  }
 }
 
 .sector__solar {
@@ -640,6 +645,25 @@
     .btn-main:hover {
       border-color: #43E849;
       background: #43E849;
+    }
+  }
+}
+
+.contacts-top {
+  h1,h2 {
+    margin-bottom: 26px;
+    line-height: 1.15;
+  }
+  p {
+    font-family: $btnFont;
+  }
+}
+
+.page__contacts {
+  .site-footer {
+    .container {
+      background: url(../img/logo-scroll.svg) 15px 0 no-repeat;
+      background-size: 150px;
     }
   }
 }

@@ -233,4 +233,6 @@
     </div>
 <?php endif; ?>
 
+<?php get_template_part( 'inc/contacts-block' ); ?>
+
 <?php get_footer();
