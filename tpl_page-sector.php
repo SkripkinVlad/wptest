@@ -20,8 +20,7 @@
 
     </main><!-- #main -->
 
-    <?php get_template_part( 'inc/footer-sectors' ); ?>
-
+    <?php get_template_part( 'template-parts/footer/footer-sector-page' ); ?>
     <?php get_footer(); ?>
 
 </div>

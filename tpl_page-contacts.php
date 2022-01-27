@@ -20,6 +20,8 @@
 
     <?php get_template_part( 'inc/contacts-block' ); ?>
 
+    <?php get_template_part( 'template-parts/footer/footer-info-pages' ); ?>
+
     <?php get_footer(); ?>
 
 </div>

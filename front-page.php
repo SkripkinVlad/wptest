@@ -235,4 +235,6 @@
 
 <?php get_template_part( 'inc/contacts-block' ); ?>
 
+<?php get_template_part( 'template-parts/footer/footer-front-page' ); ?>
+
 <?php get_footer();

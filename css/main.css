@@ -509,6 +509,9 @@ textarea:focus {
   padding-bottom: 30px;
   background: #000;
 }
+.site-footer .container {
+  position: relative;
+}
 .site-footer .links-inner {
   display: flex;
   flex-direction: column;
@@ -540,6 +543,27 @@ textarea:focus {
 .footer__sector {
   background: #000;
   padding: 30px 0;
+}
+
+.solial__links__contacts {
+  display: block;
+  width: auto;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.solial__links__contacts ul {
+  list-style: none;
+  padding: 0;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+}
+.solial__links__contacts ul li {
+  margin-right: 20px;
+}
+.solial__links__contacts ul li:last-child {
+  margin-right: 0;
 }
 
 .start {
@@ -974,10 +998,9 @@ textarea:focus {
   padding-bottom: 50px;
 }
 
-.social-homepage .social-title {
+.social_wrap .widget-title {
   text-align: center;
 }
-
 .social_wrap div {
   display: flex;
   flex-direction: column;
@@ -1142,8 +1165,10 @@ textarea:focus {
   font-family: "SFProDisplay-Semibold";
 }
 
-.page__contacts .site-footer .container {
-  background: url(../img/logo-scroll.svg) 15px 0 no-repeat;
+.footer__info__pages .container {
+  background-image: url(../img/logo-scroll.svg);
+  background-position: 15px 0;
+  background-repeat: no-repeat;
   background-size: 150px;
 }
 
@@ -1172,6 +1197,16 @@ textarea:focus {
   .sectors__inner .list__sectors .list__sectors-item:before {
     width: 50px;
   }
+
+  .footer__info__pages .container {
+    background: none;
+    padding-top: 50px;
+  }
+
+  .solial__links__contacts {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 @media (min-width: 768px) {
   .mobile-nav {
@@ -1182,7 +1217,7 @@ textarea:focus {
     display: none;
   }
 
-  .social-homepage {
+  .footer__front__page .social-list {
     display: none;
   }
 }

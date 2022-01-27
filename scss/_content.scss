@@ -467,13 +467,10 @@
   padding-bottom: 50px;
 }
 
-.social-homepage {
-  .social-title {
+.social_wrap {
+  .widget-title {
     text-align: center;
   }
-}
-
-.social_wrap {
   div {
     display: flex;
     flex-direction: column;
@@ -659,11 +656,12 @@
   }
 }
 
-.page__contacts {
-  .site-footer {
+
+.footer__info__pages {
     .container {
-      background: url(../img/logo-scroll.svg) 15px 0 no-repeat;
+      background-image: url(../img/logo-scroll.svg);
+      background-position: 15px 0;
+      background-repeat: no-repeat;
       background-size: 150px;
     }
-  }
 }

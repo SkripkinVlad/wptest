@@ -44,6 +44,17 @@
     }
   }
 
+  .footer__info__pages {
+    .container {
+      background: none;
+      padding-top: 50px;
+    }
+  }
+
+  .solial__links__contacts {
+    right: 50%;
+    transform: translateX(50%);
+  }
 }
 
 @media (min-width: 768px) {
@@ -55,8 +66,10 @@
       display: none;
     }
   }
-  .social-homepage {
-    display: none;
+  .footer__front__page {
+    .social-list {
+      display: none;
+    }
   }
 }
 
