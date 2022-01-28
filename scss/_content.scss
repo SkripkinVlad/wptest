@@ -846,10 +846,28 @@
     background-position: 95% 50%;
     background-size: 20px;
   }
+  .file-upload input[type=file] {
+    font-size: 0 !important;
+    position: relative;
+    padding: 0;
+    border: none;
+    background: none;
+    visibility: hidden;
+    pointer-events: none;
+    user-select: none;
+  }
+  .file-upload label {
+    @extend .inpt-color;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    border-radius: 11px;
+    color: #999;
+  }
 }
 
 .talent-hub-top {
-  background: url(../img/bg-talent-hub.jpg) 0 0 no-repeat;
+  background: url(../img/bg-talent-hub.jpg) 50% 0 no-repeat;
   background-size: cover;
 }
 
