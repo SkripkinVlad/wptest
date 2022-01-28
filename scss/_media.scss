@@ -320,6 +320,28 @@
     }
   }
 
+  .contacts-top {
+    background: #000;
+    min-height: 1px;
+    position: relative;
+    padding-bottom: 480px;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 480px;
+      background: url(../img/bg-top-contacts-mob.jpg) 50% 100% no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      transform: none;
+    }
+    .contacts-top-text {
+      padding-top: 150px;
+    }
+  }
+
   .footer__bottom {
     .widget-copyr {
       margin-top: 20px;
@@ -418,4 +440,10 @@
     }
   }
 
+}
+
+@media (max-width: 420px) {
+  .contacts-top {
+    padding-bottom: 380px;
+  }
 }

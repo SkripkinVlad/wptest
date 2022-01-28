@@ -684,12 +684,22 @@
 }
 
 .contacts-top {
+  min-height: 800px;
+  background: #000 url(../img/bg-top-contacts.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: contain;
+  position: relative;
   h1,h2 {
     margin-bottom: 26px;
     line-height: 1.15;
   }
   p {
     font-family: $btnFont;
+  }
+  .contacts-top-text {
+    padding-top: 275px;
+    max-width: 360px;
   }
 }
 

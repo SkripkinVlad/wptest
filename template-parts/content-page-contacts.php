@@ -1,6 +1,6 @@
-<div class="about contacts-top">
+<div class="contacts-top">
     <div class="container">
-        <div class="about-text">
+        <div class="contacts-top-text">
             <?php the_content(); ?>
         </div>
     </div>
