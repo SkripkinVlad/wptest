@@ -199,7 +199,6 @@ input[type=datetime-local]:focus,
 input[type=color]:focus,
 textarea:focus {
   outline: none;
-  border: none;
 }
 
 .file-field {
@@ -1007,6 +1006,20 @@ textarea:focus {
   background: linear-gradient(95.67deg, #3DE74C -31.66%, #A2F71E 70.81%);
 }
 
+.bnt-send-center {
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto;
+  background: linear-gradient(95.67deg, #A2F71E -31.66%, #3DE74C 70.81%);
+  font-size: 17px;
+  color: #000;
+  font-family: "SFProDisplay-Semibold";
+}
+.bnt-send-center:hover, .bnt-send-center:focus {
+  outline: none;
+  background: linear-gradient(95.67deg, #3DE74C -31.66%, #A2F71E 70.81%);
+}
+
 .entry-header {
   position: relative;
   padding-top: 150px;
@@ -1262,6 +1275,62 @@ textarea:focus {
 .contact-phone {
   background: url(../img/phone-white.svg) 0 0 no-repeat;
   padding-left: 40px;
+}
+
+.client-hub-top {
+  background: url(../img/bg-client-hub.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.start-info {
+  max-width: 568px;
+  margin: 0 auto;
+  font-family: "SFProDisplay-Light";
+  font-size: 21px;
+}
+.start-info h1 {
+  margin-bottom: 36px;
+  color: #A2F81D;
+}
+
+.client-hub-bottom {
+  padding: 135px 0;
+  background: url(../img/bg-client-hub-body.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+.client-hub-bottom .info-bottom-content {
+  max-width: 390px;
+  font-family: "SFProDisplay-Light";
+  font-size: 27px;
+}
+
+.form-line {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-line .form-row {
+  overflow: hidden;
+}
+.form-line .form-row .col {
+  width: 50%;
+  float: left;
+}
+.form-line .form-row .col:first-child {
+  padding-right: 10px;
+}
+.form-line .form-row .col:last-child {
+  padding-left: 10px;
+}
+.form-line .inpt-color {
+  background: rgba(21, 21, 21, 0.6);
+  border: 1px solid #A2F21E;
+  padding: 17px 15px;
+  font-size: 15px;
+}
+.form-line textarea {
+  height: 106px;
+  font-size: 16px;
 }
 
 @media (max-width: 1279px) {

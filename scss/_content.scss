@@ -475,6 +475,21 @@
   }
 }
 
+.bnt-send-center {
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0 auto;
+  background: linear-gradient(95.67deg, #A2F71E -31.66%, #3DE74C 70.81%);
+  font-size: $mainFontSie;
+  color: $darkColor;
+  font-family: $btnFont;
+  &:hover,
+  &:focus {
+    outline: none;
+    background: linear-gradient(95.67deg,#3DE74C -31.66%, #A2F71E 70.81%);
+  }
+}
+
 .entry-header {
   position: relative;
   padding-top: 150px;
@@ -756,4 +771,60 @@
 .contact-phone {
   background: url(../img/phone-white.svg) 0 0 no-repeat;
   padding-left: 40px;
+}
+
+.client-hub-top {
+  background: url(../img/bg-client-hub.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.start-info {
+  h1 {
+    margin-bottom: 36px;
+    color: $secondaryColor;
+  }
+  max-width: 568px;
+  margin: 0 auto;
+  font-family: $bodyFontLight;
+  font-size: 21px;
+}
+
+.client-hub-bottom {
+  padding: 135px 0;
+  background: url(../img/bg-client-hub-body.jpg) 0 0 no-repeat;
+  background-size: cover;
+  .info-bottom-content {
+    max-width: 390px;
+    font-family: $bodyFontLight;
+    font-size: $mediumFontSize;
+  }
+}
+
+.form-line {
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  .form-row {
+    overflow: hidden;
+    .col {
+      width: 50%;
+      float: left;
+      &:first-child {
+        padding-right: 10px;
+      }
+      &:last-child {
+        padding-left: 10px;
+      }
+    }
+  }
+  .inpt-color {
+    background: rgba(21, 21, 21, 0.6);
+    border: 1px solid #A2F21E;
+    padding: 17px 15px;
+    font-size: 15px;
+  }
+  textarea {
+    height: 106px;
+    font-size: 16px;
+  }
 }
