@@ -65,7 +65,7 @@
     }
   }
 
-  .solial__links__contacts {
+  .social-icons-list {
     right: 50%;
     transform: translateX(50%);
   }
@@ -346,6 +346,19 @@
   .location__contacts {
     margin-top: 30px;
   }
+
+  .client-hub-bottom {
+    padding: 70px 0;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .info-bottom-content {
+      margin-bottom: 40px;
+      font-size: 21px;
+    }
+  }
+
 }
 
 @media(max-width: 479px) {
@@ -390,4 +403,19 @@
       font-size: 14px;
     }
   }
+
+  .form-line {
+    .form-row {
+      overflow: visible;
+      .col {
+        float: none;
+        width: 100%;
+        &:first-child,
+        &:last-child {
+          padding: 0;
+        }
+      }
+    }
+  }
+
 }

@@ -1,45 +1,7 @@
 <footer class="site-footer footer__info__pages">
     <div class="container">
 
-        <div class="solial__links__contacts">
-            <ul>
-                <?php $fb_link = get_field( 'fb_link' ); ?>
-                <?php if ( $fb_link ) : ?>
-                    <li>
-                        <a href="<?php echo esc_url( $fb_link) ; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/fb-grey.svg" alt="">
-                        </a>
-                    </li>
-                <?php endif; ?>
-
-                <?php $inst_link = get_field( 'inst_link' ); ?>
-                <?php if ( $inst_link ) : ?>
-                    <li>
-                        <a href="<?php echo esc_url( $inst_link) ; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/inst-grey.svg" alt="">
-                        </a>
-                    </li>
-                <?php endif; ?>
-
-                <?php $linkedin_link = get_field( 'linkedin_link' ); ?>
-                <?php if ( $linkedin_link ) : ?>
-                    <li>
-                        <a href="<?php echo esc_url( $linkedin_link) ; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/linkedin-grey.svg" alt="">
-                        </a>
-                    </li>
-                <?php endif; ?>
-
-                <?php $twitter_link = get_field( 'twitter_link' ); ?>
-                <?php if ( $twitter_link ) : ?>
-                    <li>
-                        <a href="<?php echo esc_url( $twitter_link) ; ?>">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/twitter-grey.svg" alt="">
-                        </a>
-                    </li>
-                <?php endif; ?>
-            </ul>
-        </div>
+        <?php dynamic_sidebar('social-icons-list'); ?>
 
         <div class="links">
             <div class="col">

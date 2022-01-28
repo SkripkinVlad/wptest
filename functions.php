@@ -166,6 +166,17 @@ function start_tmpl_widgets_init() {
     );
     register_sidebar(
         array(
+            'name'          => esc_html__( 'Social Icons Grey', 'start_tmpl' ),
+            'id'            => 'social-icons-list',
+            'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),
+            'before_widget' => '<section id="%1$s" class="widget social-icons-list %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h4 class="widget-title">',
+            'after_title'   => '</h4>',
+        )
+    );
+    register_sidebar(
+        array(
             'name'          => esc_html__( 'Copyright', 'start_tmpl' ),
             'id'            => 'copyright',
             'description'   => esc_html__( 'Add widgets here.', 'start_tmpl' ),

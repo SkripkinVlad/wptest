@@ -544,24 +544,24 @@ textarea:focus {
   padding: 30px 0;
 }
 
-.solial__links__contacts {
+.social-icons-list {
   display: block;
   width: auto;
   position: absolute;
   right: 15px;
   top: 0;
 }
-.solial__links__contacts ul {
+.social-icons-list ul {
   list-style: none;
   padding: 0;
   width: auto;
   display: flex;
   flex-direction: row;
 }
-.solial__links__contacts ul li {
+.social-icons-list ul li {
   margin-right: 20px;
 }
-.solial__links__contacts ul li:last-child {
+.social-icons-list ul li:last-child {
   margin-right: 0;
 }
 
@@ -1014,6 +1014,7 @@ textarea:focus {
   font-size: 17px;
   color: #000;
   font-family: "SFProDisplay-Semibold";
+  border: none;
 }
 .bnt-send-center:hover, .bnt-send-center:focus {
   outline: none;
@@ -1376,7 +1377,7 @@ textarea:focus {
     padding-top: 50px;
   }
 
-  .solial__links__contacts {
+  .social-icons-list {
     right: 50%;
     transform: translateX(50%);
   }
@@ -1628,6 +1629,18 @@ textarea:focus {
   .location__contacts {
     margin-top: 30px;
   }
+
+  .client-hub-bottom {
+    padding: 70px 0;
+  }
+  .client-hub-bottom .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .client-hub-bottom .info-bottom-content {
+    margin-bottom: 40px;
+    font-size: 21px;
+  }
 }
 @media (max-width: 479px) {
   .services:before {
@@ -1659,6 +1672,17 @@ textarea:focus {
   }
   .contacts .contact-inner {
     font-size: 14px;
+  }
+
+  .form-line .form-row {
+    overflow: visible;
+  }
+  .form-line .form-row .col {
+    float: none;
+    width: 100%;
+  }
+  .form-line .form-row .col:first-child, .form-line .form-row .col:last-child {
+    padding: 0;
   }
 }
 
