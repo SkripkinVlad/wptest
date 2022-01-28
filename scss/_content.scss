@@ -819,7 +819,7 @@
     }
   }
   .inpt-color {
-    background: rgba(21, 21, 21, 0.6);
+    background-color: rgba(21, 21, 21, 0.6);
     border: 1px solid #A2F21E;
     padding: 17px 15px;
     font-size: 15px;
@@ -828,4 +828,23 @@
     height: 106px;
     font-size: 16px;
   }
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-image: url(../img/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 20px;
+  }
+}
+
+.talent-hub-top {
+  background: url(../img/bg-talent-hub.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
+.talent-hub-bottom {
+  padding: 130px 0 260px 0;
+  background: url(../img/bg-talent-hub-body.jpg) 0 0 no-repeat;
+  background-size: cover;
 }
